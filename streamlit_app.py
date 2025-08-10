@@ -8,11 +8,11 @@ st.title("🇮🇳 India: Then vs Now")
 # Sidebar navigation
 menu = st.sidebar.radio("Navigate", ["Then vs Now", "Timeline", "Gallery", "About & CMS Vision"])
 
-# Public working images
-historical_image = "https://upload.wikimedia.org/wikipedia/commons/9/90/Chandni_Chowk%2C_Delhi%2C_ca_1900.jpg"
-historical_image2 = "https://upload.wikimedia.org/wikipedia/commons/3/31/Varanasi_-_Benares%2C_India%2C_c._1905.jpg"
-modern_image = "https://upload.wikimedia.org/wikipedia/commons/d/dc/Mumbai_Skyline_at_Night.jpg"
-modern_image2 = "https://upload.wikimedia.org/wikipedia/commons/8/85/Bandra_Worli_Sea_Link_Mumbai.jpg"
+# Public working images (direct JPG links)
+historical_image = "https://upload.wikimedia.org/wikipedia/commons/d/d4/Chandni_Chowk_in_the_1890s.jpg"
+historical_image2 = "https://upload.wikimedia.org/wikipedia/commons/5/50/Varanasi%2C_India%2C_c._1905.jpg"
+modern_image = "https://upload.wikimedia.org/wikipedia/commons/6/66/Mumbai_Skyline_at_Night.jpg"
+modern_image2 = "https://upload.wikimedia.org/wikipedia/commons/a/a1/Bandra_Worli_Sea_Link_Mumbai_2013.jpg"
 
 # THEN vs NOW View
 if menu == "Then vs Now":
