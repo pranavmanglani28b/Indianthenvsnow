@@ -3,9 +3,12 @@ from PIL import Image
 import requests
 from io import BytesIO
 
-img = Image.open("images.png")
-img = img.resize((224, 225))  # width=600px, height=400px
-
+#img = Image.open("images.png")
+#img = img.resize((224, 225))  # width=600px, height=400px
+url = "images.png"
+response  = requests.get(url)
+img = Image.open(BytesIO(response.content))
+img = img.resize((224, 225))
 # App title
 st.set_page_config(page_title="India Then vs Now - Defence & AI", layout="wide")
 st.title("🇮🇳 India Then vs Now: Defence & AI Revolution")
