@@ -56,8 +56,8 @@ Governance: AI is aiding in policy-making, urban planning, and citizen services 
 Startups: India is home to thousands of AI startups, contributing to global innovation in machine learning, robotics, and automation.
 ''')
 
-st.header("The Big Picture")
-st.text('''
+    st.header("The Big Picture")
+    st.text('''
 AI is no longer a futuristic concept — it’s here, shaping everyday life.
 Where India once relied solely on human effort and manual processes, today it leverages machine intelligence and data-driven decisions to leapfrog development stages.
 
