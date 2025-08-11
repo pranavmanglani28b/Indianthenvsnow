@@ -26,8 +26,9 @@ if menu == "Then vs Now":
         st.subheader("Now (Modern India)")
         st.image(modern_image, caption="Mumbai Skyline at Night", use_container_width=True)
         st.image(modern_image2, caption="Bandra-Worli Sea Link, Mumbai", use_container_width=True)
-    st.header('''India Then vs Now — Through the Lens of AI 
-Then:''')
+    st.header('''India Then vs Now — Through the Lens of AI''')
+    st.header('''Then:''')
+
     st.text('''
 In the decades following independence, India’s progress relied heavily on manual labor, traditional industries, and basic machinery.
 
@@ -38,8 +39,10 @@ Information spread was slow — newspapers, radios, and word of mouth shaped pub
 Education was limited to books and chalkboards, with little to no technology in classrooms.
 
 Data was scarce, unstructured, and difficult to analyze, meaning progress often came slowly and incrementally.
+''')
+    st.header("Now:")
+    st.text('''
 
-Now
 Today, India is rapidly transforming into an AI-powered economy:
 
 Agriculture: AI predicts crop yields, weather patterns, and pest outbreaks, helping farmers make better decisions.
