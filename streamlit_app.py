@@ -54,12 +54,15 @@ Education: Smart classrooms, AI tutors, and personalized learning platforms are 
 Governance: AI is aiding in policy-making, urban planning, and citizen services through predictive analytics.
 
 Startups: India is home to thousands of AI startups, contributing to global innovation in machine learning, robotics, and automation.
+''')
 
-The Big Picture
+st.header("The Big Picture")
+st.text('''
 AI is no longer a futuristic concept — it’s here, shaping everyday life.
 Where India once relied solely on human effort and manual processes, today it leverages machine intelligence and data-driven decisions to leapfrog development stages.
 
 In short: India Then was human-powered. India Now is human + AI-powered.''')
+
 
 # Timeline View
 elif menu == "Timeline":
