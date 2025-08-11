@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="India Then vs Now", layout="wide")
 
 # Title
-st.title("🇮🇳 India: Then vs Now")
+st.title(🇮🇳,"India: Then vs Now")
 
 # Sidebar navigation
 menu = st.sidebar.radio("Navigate", ["Then vs Now", "Timeline", "About & CMS Vision"])
