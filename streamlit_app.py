@@ -52,7 +52,7 @@ Artificial Intelligence is revolutionising warfare:
 
 # --- Shubhanshu Shukla & CMS Vision ---
 st.header("🌟 Visionary Leadership: Shubhanshu Shukla & CMS")
-st.image("cms_image.jpg", caption="City Montessori School", use_column_width=True)
+st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMX-CTLwrAMfhjGT1QhhnA7FiH5u6zSMBzFQ&s", caption="City Montessori School", use_column_width=True)
 st.markdown("""
 **Shubhanshu Shukla**, an educator and visionary, emphasizes **holistic education**
 that prepares students for a tech-driven future. At **City Montessori School (CMS)**,
