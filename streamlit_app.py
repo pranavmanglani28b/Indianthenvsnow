@@ -1,5 +1,8 @@
 import streamlit as st
 from PIL import Image
+import requests
+from io import BytesIO
+
 img = Image.open("images.png")
 img = img.resize((224, 225))  # width=600px, height=400px
 
