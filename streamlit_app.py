@@ -1,105 +1,122 @@
 import streamlit as st
 
-st.set_page_config(page_title="India Then vs Now — AI Transformation", layout="wide")
+# -------------------------------
+# Page Configuration
+# -------------------------------
+st.set_page_config(page_title="India: Then vs Now", layout="wide")
 
-# Title
-st.title("🇮🇳 India Then vs Now — The AI Transformation")
-st.markdown("### Exploring how AI has reshaped India's journey from the past to the present.")
+# -------------------------------
+# Title and Introduction
+# -------------------------------
+st.title("🇮🇳 India: Then vs Now — The AI Revolution")
+st.write("""
+India has undergone a remarkable transformation in the past few decades.
+From a largely agrarian economy to a technology powerhouse, the changes have been monumental.
+One of the most significant forces shaping modern India is **Artificial Intelligence (AI)**.
+Let's explore how AI has changed our nation and where it’s heading.
+""")
 
-# Tabs for Navigation
-tabs = st.tabs(["Then vs Now", "AI in Different Sectors", "Vision of CMS", "About Shubhanshu Shukla"])
+# -------------------------------
+# THEN vs NOW - Overview
+# -------------------------------
+col1, col2 = st.columns(2)
 
-# ----------------- TAB 1: Then vs Now Overview -----------------
-with tabs[0]:
-    st.header("📜 India's Journey: Then vs Now")
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.subheader("Then (Pre-AI Era)")
-        st.markdown("""
-        - Depended on manual labor, traditional industries, and basic machinery.
-        - Decisions in agriculture, governance, and healthcare relied entirely on human judgment.
-        - Slow communication via letters, newspapers, and radio.
-        - Education limited to physical classrooms and books.
-        - Data was scattered, unused, and unstructured.
-        """)
-        st.image("https://upload.wikimedia.org/wikipedia/commons/e/ea/Indian_farmer_plowing_field.jpg", caption="Agriculture in early India", use_column_width=True)
-
-    with col2:
-        st.subheader("Now (AI-Powered Era)")
-        st.markdown("""
-        - AI-driven tools help in every sector from farming to finance.
-        - Real-time decision-making through predictive analytics.
-        - Instant communication and collaboration via the internet.
-        - Personalized AI tutors and adaptive learning in classrooms.
-        - AI processes massive data for better governance and innovation.
-        """)
-        st.image("https://upload.wikimedia.org/wikipedia/commons/8/87/AI_robot_india.jpg", caption="AI in modern India", use_column_width=True)
-
-# ----------------- TAB 2: AI in Different Sectors -----------------
-with tabs[1]:
-    st.header("🤖 AI in Different Sectors — India’s Transformation")
-    
-    sectors = {
-        "Agriculture": {
-            "then_img": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Ploughing_with_oxen.jpg",
-            "now_img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Drone_in_agriculture.jpg",
-            "then_text": "Farmers relied on experience and tradition to decide sowing and harvesting times.",
-            "now_text": "AI predicts weather, detects crop diseases, and suggests the best planting times."
-        },
-        "Healthcare": {
-            "then_img": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Old_hospital_india.jpg",
-            "now_img": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AI_healthcare.jpg",
-            "then_text": "Diagnosis based on physical examination and limited technology.",
-            "now_text": "AI reads scans, predicts health risks, and recommends treatments in seconds."
-        },
-        "Education": {
-            "then_img": "https://upload.wikimedia.org/wikipedia/commons/6/67/Indian_rural_school.jpg",
-            "now_img": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Online_learning.jpg",
-            "then_text": "One-size-fits-all teaching with chalkboards and textbooks.",
-            "now_text": "AI-powered platforms customize lessons for each student."
-        }
-    }
-
-    for sector, data in sectors.items():
-        st.subheader(sector)
-        col1, col2 = st.columns(2)
-        with col1:
-            st.image(data["then_img"], caption=f"{sector} — Then", use_column_width=True)
-            st.markdown(f"**Then:** {data['then_text']}")
-        with col2:
-            st.image(data["now_img"], caption=f"{sector} — Now", use_column_width=True)
-            st.markdown(f"**Now:** {data['now_text']}")
-        st.markdown("---")
-
-# ----------------- TAB 3: Vision of CMS -----------------
-with tabs[2]:
-    st.header("🏫 The Vision of CMS (City Montessori School)")
-    st.image("https://www.cmseducation.org/images/logo.png", caption="CMS Logo", width=200)
-    st.markdown("""
-    City Montessori School (CMS) envisions an **education system that nurtures world citizens**.
-    Their focus is not only academic excellence but also **values, innovation, and global responsibility**.
-
-    **Key Vision Points:**
-    - Promote peace and unity through education.
-    - Integrate technology and AI into learning.
-    - Foster critical thinking and innovation among students.
-    - Create socially responsible leaders of tomorrow.
+with col1:
+    st.header("India Then")
+    st.image(
+        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Indian_farmer_plowing_field.jpg",
+        caption="Agriculture-driven economy in the past",
+        use_container_width=True
+    )
+    st.write("""
+    - Economy based on agriculture and manual labor.
+    - Communication via letters and landline telephones.
+    - Education heavily dependent on rote learning.
+    - Industries were mostly manual with minimal automation.
+    - Limited technological infrastructure.
     """)
 
-# ----------------- TAB 4: About Shubhanshu Shukla -----------------
-with tabs[3]:
-    st.header("👨‍💼 About Shubhanshu Shukla")
-    st.image("https://media.licdn.com/dms/image/D5603AQHTP1O1x0E8sw/profile-displayphoto-shrink_800_800/0/1704989116974?e=2147483647&v=beta&t=GxA5tZAC7nx6gIUVqO3Vsw0NhWB5prK5y-8mVa90ZoU",
-             caption="Shubhanshu Shukla")
-    st.markdown("""
-    **Shubhanshu Shukla** is an educational leader and visionary at CMS, dedicated to integrating modern technology, 
-    including AI, into the classroom.  
-    He aims to prepare students for **a rapidly changing world** by focusing on:
-    - Digital literacy
-    - AI skills
-    - Ethical leadership
-    - Global perspective
+with col2:
+    st.header("India Now")
+    st.image(
+        "https://upload.wikimedia.org/wikipedia/commons/5/5d/Bangalore_IT_park.jpg",
+        caption="India's booming IT and AI industry",
+        use_container_width=True
+    )
+    st.write("""
+    - Digital-first economy with thriving tech startups.
+    - AI-driven industries from healthcare to banking.
+    - Smartphones and internet penetration even in rural areas.
+    - Education powered by online learning platforms and AI tutors.
+    - Smart agriculture, manufacturing, and logistics.
     """)
 
-st.success("✅ Interactive board loaded successfully! Explore the tabs to learn more about India's AI transformation.")
+# -------------------------------
+# AI in Modern India
+# -------------------------------
+st.subheader("📈 The Rise of Artificial Intelligence in India")
+st.write("""
+AI is no longer a futuristic concept — it's here and transforming lives daily.
+From predicting crop yields for farmers to detecting diseases earlier than doctors,
+AI is bridging gaps and opening new possibilities.
+""")
+
+ai_points = [
+    "AI-based crop monitoring to help farmers improve yield.",
+    "Automated medical diagnosis tools in rural clinics.",
+    "Voice assistants supporting regional languages.",
+    "AI-powered financial fraud detection.",
+    "Traffic management systems in smart cities.",
+    "Robotics in manufacturing and e-commerce."
+]
+
+for point in ai_points:
+    st.markdown(f"✅ {point}")
+
+st.image(
+    "https://upload.wikimedia.org/wikipedia/commons/6/6f/Robotics_and_AI.jpg",
+    caption="AI & Robotics in India",
+    use_container_width=True
+)
+
+# -------------------------------
+# Interactive Quiz
+# -------------------------------
+st.subheader("🧠 Quick AI Knowledge Quiz")
+question = st.radio(
+    "Which city is known as the 'Silicon Valley of India'?",
+    ("Hyderabad", "Bengaluru", "Pune")
+)
+if question == "Bengaluru":
+    st.success("🎉 Correct! Bengaluru is home to India's largest tech hub.")
+else:
+    st.error("❌ Not quite. It's Bengaluru.")
+
+# -------------------------------
+# Timeline
+# -------------------------------
+st.subheader("📜 India’s AI Timeline")
+timeline_data = {
+    "1990s": "Computers introduced widely, internet begins to spread.",
+    "2000s": "IT boom, outsourcing industry grows rapidly.",
+    "2010s": "Startups emerge focusing on AI and automation.",
+    "2020s": "AI integrated into healthcare, education, finance, and governance."
+}
+for year, event in timeline_data.items():
+    st.markdown(f"**{year}:** {event}")
+
+# -------------------------------
+# Conclusion
+# -------------------------------
+st.subheader("🚀 The Road Ahead")
+st.write("""
+AI will continue to shape India’s future.
+With ethical use, proper regulation, and inclusive access, AI can bridge the gap between rural and urban India,
+making our nation more efficient, equitable, and innovative.
+""")
+
+st.image(
+    "https://upload.wikimedia.org/wikipedia/commons/d/d7/India_Futuristic_City_Concept.jpg",
+    caption="Imagining India's AI-powered future",
+    use_container_width=True
+)
