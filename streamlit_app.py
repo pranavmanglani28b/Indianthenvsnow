@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-img = Image.open("cms_image.jpg")
+img = Image.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMX-CTLwrAMfhjGT1QhhnA7FiH5u6zSMBzFQ&s")
 img = img.resize((600, 400))  # width=600px, height=400px
 
 # App title
