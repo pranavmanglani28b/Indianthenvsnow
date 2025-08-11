@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 img = Image.open("images.png")
-img = img.resize((600, 400))  # width=600px, height=400px
+img = img.resize((224, 225))  # width=600px, height=400px
 
 # App title
 st.set_page_config(page_title="India Then vs Now - Defence & AI", layout="wide")
