@@ -26,8 +26,9 @@ if menu == "Then vs Now":
         st.subheader("Now (Modern India)")
         st.image(modern_image, caption="Mumbai Skyline at Night", use_container_width=True)
         st.image(modern_image2, caption="Bandra-Worli Sea Link, Mumbai", use_container_width=True)
-    st.text('''India Then vs Now — Through the Lens of AI
-Then
+    st.header('''India Then vs Now — Through the Lens of AI 
+Then:''')
+    st.text('''
 In the decades following independence, India’s progress relied heavily on manual labor, traditional industries, and basic machinery.
 
 Decisions in governance, agriculture, healthcare, and business were guided by human judgment alone.
